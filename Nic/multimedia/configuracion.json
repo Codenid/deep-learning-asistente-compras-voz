@@ -1,0 +1,5 @@
+{
+ "pausa_s": 4.0,
+ "max_grabacion_s": 30.0,
+ "umbral_voz_dbfs": -45.0
+}

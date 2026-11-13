@@ -1,0 +1,24 @@
+# Laboratorio 4 - asistente de compras por voz. Python 3.11 (local o Colab).
+# 1) torch con CUDA 12.8 primero (incluye soporte para RTX 50 / sm_120):
+#    pip install torch==2.7.1 torchaudio==2.7.1 --index-url https://download.pytorch.org/whl/cu128
+# 2) luego: pip install -r requirements.txt
+# Python 3.11; PyTorch 2.7.1/cu128 incluye kernels para GPUs Blackwell.
+torch==2.7.1
+torchaudio==2.7.1
+transformers==4.51.3
+accelerate==1.6.0
+bitsandbytes>=0.50.2
+sentence-transformers==4.1.0
+coqui-tts==0.26.0
+rank-bm25==0.2.2
+jiwer==3.1.0
+soundfile==0.13.1
+flask==3.1.0                     # grabador_voz.py
+librosa==0.10.2.post1
+sounddevice==0.5.1
+pandas==2.2.3
+pyarrow==19.0.1
+numpy==1.26.4
+matplotlib==3.10.1
+jupyter
+ipywidgets
