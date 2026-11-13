@@ -1,0 +1,23 @@
+# Entornos y cachés locales
+.venv/
+.venv-wsl/
+**/__pycache__/
+**/.ipynb_checkpoints/
+.pytest_cache/
+
+# Diagnóstico y temporales
+.diagnostico/
+*.log
+*.tmp
+
+# Datasets grandes; descargarlos según las instrucciones del laboratorio
+input/*.parquet
+
+# Resultados generados por el notebook
+output/
+
+# Archivos locales de sistema/IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
