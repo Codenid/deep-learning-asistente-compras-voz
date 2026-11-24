@@ -27,17 +27,10 @@ Estas pruebas ejecutan la autoprueba original y comprueban además: formatos de 
 
 Los resultados de la ejecución completa se guardan en el notebook y en `output/resultados/`. La tabla oficial es `metricas_escenarios.csv`; los registros por turno y estados finales están en `output/escenarios/`.
 
-### Resultado final — 8 de noviembre de 2026
+### Estado de evidencia publicado
 
-Tras la ejecución completa y las revalidaciones de los casos corregidos:
+La copia del notebook actualmente publicada muestra una ejecución guardada con **3/20 escenarios oficiales completados** (texto 2/14, audio 1/6); la repetición con transcripción corregida muestra 2/6. Estos resultados son una fotografía de una corrida anterior y no deben atribuirse automáticamente al código posterior. Por ello se elimina la afirmación previa de 20/20: no coincide con las salidas visibles en `main`.
 
-| Evaluación | Completados | Incumplimientos |
-|---|---:|---:|
-| Oficial: 14 texto + 6 voz | **20/20 (100 %)** | **0** |
-| Texto | 14/14 | 0 |
-| Voz con audio real | 6/6 | 0 |
-| Voz con transcripción correcta | 6/6 | 0 |
+La celda §12.1 genera ahora cinco casos de acierto y cinco de fallo a partir de la recuperación y de los escenarios oficiales, con evidencia y una causa probable marcada como hipótesis. Si una nueva ejecución no produce cinco casos de cada tipo, informa que la rúbrica sigue pendiente en lugar de inventar ejemplos. Las causas deben contrastarse con `registro.json`, las operaciones y el estado final antes de incluirlas como conclusiones.
 
-El notebook conserva 50 celdas, incluidas **31 celdas de código ejecutadas y ninguna salida de error**. Se actualizaron las tablas, los registros de los escenarios revalidados, sus audios y los gráficos. Se comprobó que las definiciones de escenarios y el código de evaluación de recuperación son idénticos a la copia anterior.
-
-Se conserva una copia anterior a las correcciones en `Laboratorio4_Asistente.antes_correcciones.ipynb`.
+**Pendiente para cerrar:** reiniciar el kernel y ejecutar el notebook completo después de los cambios; revisar los 20 estados finales; actualizar las salidas visibles y la presentación con esas mismas métricas. No se declara el cumplimiento total hasta que esa evidencia sea consistente.
