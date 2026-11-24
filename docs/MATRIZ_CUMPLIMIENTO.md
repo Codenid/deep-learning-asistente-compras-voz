@@ -2,7 +2,7 @@
 
 Todo el sistema está en `Laboratorio4_Asistente.ipynb` (50 celdas; "c" = número de celda).
 
-**Estado:** ✅ implementado y probado · 🎙️ implementado, produce resultados cuando estén las grabaciones · 📝 lo completa el grupo
+**Estado de revisión:** el código cubre la mayor parte de los requisitos, pero los resultados visibles no acreditan cumplimiento total. La ejecución guardada en el notebook reporta 3/20 escenarios oficiales; revisar `docs/CORRECCIONES_Y_VALIDACION.md` antes de usar cualquier cifra como resultado final. En las tablas, ✅ indica que el componente está presente en el código, 🎙️ que depende de datos de voz y 🟡/📝 que requiere validación o trabajo del grupo.
 
 ## 1. Descripción del problema
 
@@ -92,22 +92,22 @@ Todo el sistema está en `Laboratorio4_Asistente.ipynb` (50 celdas; "c" = númer
 | 57 | Evaluación del modelo base, ablación y resultados de las pruebas | §5, §8–§11 | c15–c16, c28–c38 | ✅ |
 | 58 | Instrucciones de ejecución, versiones, modelos y configuración | Tablero (c3), versiones (c5), tabla de modelos (c17), instrucciones (c46), `requirements.txt` | §1, §6, §14 | ✅ |
 | 59 | Gráficos y resultados en celdas o en Markdown | 4 figuras en §11 + CSV en `output/resultados/` | §11 c37–c38 | ✅ |
-| 60 | ≥ 5 aciertos y 5 fallos con causas | Candidatos automáticos (recuperación y escenarios) + tabla a completar | §12 c40–c41 | ✅📝 |
-| 61 | Limitaciones de la solución | Lista inicial en §12.2 (revisar con los resultados reales) | §12 c41 | ✅📝 |
+| 60 | ≥ 5 aciertos y 5 fallos con causas | §12.1 genera casos desde evidencia real de recuperación/escenarios; causas son hipótesis que se deben contrastar con los registros | §12 c40–c41 | 🟡 revisar al ejecutar |
+| 61 | Limitaciones de la solución | Lista inicial en §12.2; confirmar contra la corrida final | §12 c41 | 🟡 revisar al ejecutar |
 | 62 | Video ≤ 20 min: metodología 4, implementación 4, demostración 8, resultados 4 | Guion por bloque en `docs/GUIA_VIDEO.md`; demo con espera real en §13 | §13 c43 | 📝 |
 
 ## Resumen
 
-| Bloque | Puntos | ✅ | ✅🎙️ (requiere grabaciones) | 📝 (grupo) |
+| Bloque | Puntos | ✅ código presente | ✅🎙️ requiere audios | 🟡/📝 pendiente de validar o completar |
 |---|---|---|---|---|
 | Problema | 12 | 10 | 2 | 0 |
 | Dataset | 7 | 7 | 0 | 0 |
 | Tareas | 15 | 13 | 2 | 0 |
 | Pruebas | 10 | 3 | 7 | 0 |
 | Métricas | 9 | 6 | 3 | 0 |
-| Entrega | 9 | 6 | 0 | 3 |
-| **Total** | **62** | **45** | **14** | **3** |
+| Entrega | 9 | 4 | 0 | 5 |
+| **Total** | **62** | **43** | **14** | **5** |
 
 **Extra:** §15 (c47–c49) aplicativo de prueba: panel para escribir o hablar una consulta y ver la respuesta del agente con lo que devolvió la base de datos (productos, carrito, pedidos) y el tiempo por etapa.
 
-**Pendientes del grupo:** grabar `referencia.wav` y los 23 audios, ejecutar el notebook, pegar el enunciado en §0, completar §12 y grabar el video.
+**Pendientes para cerrar:** ejecutar el notebook tras las correcciones; conciliar los resultados de escenarios, métricas y presentación; revisar §12.1–§12.2 y grabar el video. La corrida visible actualmente no demuestra 20/20.
