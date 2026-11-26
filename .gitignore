@@ -1,22 +1,52 @@
-# Entornos y cachés locales
+# Entornos virtuales
 .venv/
-.venv-wsl/
-**/__pycache__/
-**/.ipynb_checkpoints/
-.pytest_cache/
+.venv-*/
+venv/
+env/
 
-# Diagnóstico y temporales
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Configuración local y credenciales
+.env
+.env.*
+!.env.example
+
+# Jupyter
+.ipynb_checkpoints/
+.jupyter/
+
+# Perfiles y muestras de voz privadas
+data/voice_samples/*
+data/voice_profile*.pt
+data/*.pt
+
+# Datasets descargados (mantener solo el marcador del directorio)
+data/raw/*
+!data/raw/.gitkeep
+
+# Salidas generadas
+data/vector_store/
+experiments/output/
+dist/
+build/
+
+# Perfiles y audios generados por la integración modular
+data/voice_profiles/
+data/scenario_audio/
+output/
+
+# Protecciones locales históricas
+.venv-wsl/
 .diagnostico/
 *.log
 *.tmp
-
-# Datasets grandes; descargarlos según las instrucciones del laboratorio
 input/*.parquet
-
-# Resultados generados por el notebook
-output/
-
-# Archivos locales de sistema/IDE
 .DS_Store
 Thumbs.db
 .vscode/

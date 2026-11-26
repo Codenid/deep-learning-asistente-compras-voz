@@ -1,0 +1,17 @@
+# Instala primero PyTorch 2.7.1 + CUDA 12.8 con el comando de README.md.
+# Se fija Transformers porque XTTS-v2 0.22.0 no es compatible con la API
+# BeamSearchScorer de las versiones recientes.
+numpy==1.26.4
+pandas==2.2.3
+pyarrow==20.0.0
+rank-bm25==0.2.2
+sentence-transformers==3.4.1
+transformers==4.46.2
+accelerate==1.16.0
+bitsandbytes==0.50.2
+TTS==0.22.0
+soundfile==0.13.1
+librosa==0.10.2.post1
+jiwer==3.1.0
+matplotlib==3.10.1
+ipywidgets>=8.1,<9
